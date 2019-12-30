@@ -30,15 +30,11 @@ const Layout = ({ children }) => {
         <div className="sidebar">
           <Sidebar />
         </div>
-        <div className="body">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <div id="top" className="body">
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="content">
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+         
         </div>
       </div>
     </>

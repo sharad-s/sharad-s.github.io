@@ -8,13 +8,74 @@ import SEO from "../components/SEO"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div id="about" style={{marginBottom:"25vh"}}/>
+    <h1>I am Sharad Shekar,</h1>
+    <h1>a creative technologist and AI enthusiast</h1>
+    <p>Animation, Design, Writing, AI, ML, Bots, CSS, JavaScript, Ruby, Git, Vim, 3D, XR</p>
+
+
+    <br/>
+    <br/>
+    <br/> 
+    
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+
+    <br/>
+    <br/>
+    <br/> 
+
+    <h1 id="work">Work</h1>
+
+
+    <br/>
+    <br/>
+    <br/> 
+    
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+
+    <br/>
+    <br/>
+    <br/> 
+
+    <h1 id="media"> Media Library</h1>
+
+
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+    <h2>I eat poop for breakfast</h2>
+
+
   </Layout>
 )
 

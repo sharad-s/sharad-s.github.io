@@ -5,3 +5,21 @@
  */
 
 // You can delete this file if you're not using it
+
+import scrollToElement from "scroll-to-element"
+
+const onRouteUpdate = ({ location }) => {
+  checkHash(location)
+}
+
+const checkHash = location => {
+  let { hash } = location
+  if (hash) {
+    scrollToElement(hash, {
+      offset: -95,
+      duration: 1000,
+    })
+  }
+}
+
+export { onRouteUpdate }

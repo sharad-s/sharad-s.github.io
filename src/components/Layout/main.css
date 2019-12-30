@@ -1,131 +1,133 @@
 .header {
-  background-color: purple;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
   /* margin-top: 20px; */
-
 }
 
 .me {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
+
 
 #ME {
-    width: 100px !important;
-    border-radius: 5px;
-    margin:20px 20px
-  }
+  width: 100px !important;
+  border-radius: 5px;
+  margin: 20px 20px;
+}
 
 #ME_HEADER {
-    width: 80px !important;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    display: none;
-
-  }
+  width: 80px !important;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: none;
+}
 
 .header .title {
-    /* background-color: lime; */
-    padding: 2.45rem 1.0875rem;
-    color:black;
-    text-align: center;
-
+  /* background-color: lime; */
+  padding: 2.45rem 1.0875rem;
+  color: white;
+  margin-bottom: 1px;
 }
-
 
 div.body {
-    margin-left: 200px;
+  margin-left: 200px;
 }
-
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    padding: 1px 16px;
-    background-color: lime;
-    height:100%
-  }
+  padding: 2.45rem 1.0875rem;
+  background-color: white;
+}
 
 /* The side navigation menu */
 .sidebar {
   /* margin-top: 20px; */
-  padding: 0px 16px;
+  padding: 1px 16px;  
   width: 200px;
-  /* background-color: #f1f1f1; */
+  background-color: transparent;
   position: fixed;
   height: 100%;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* box-shadow: 3px 3px 5px grey;; */
+}
+
+.sidebar .footer {
+  align-self: flex-end;
+  bottom:0px;
+  position: absolute;
 }
 
 /* Sidebar links */
-.sidebar .a {
-  display: block;
+.sidebar a {
   color: black;
-  padding: 16px;
   text-decoration: none;
 }
 
 /* Active/current link */
-.sidebar .a.active {
-  background-color: #4caf50;
-  color: white;
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a.active {
+  /* background-color: ; */
+  /* color: green; */
+  text-decoration: underline;
 }
 
 /* Links on mouse-over */
-.sidebar .a:hover:not(.active) {
+a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
-
-
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
- .header {
-     flex-direction: column;
-     justify-content: center;
- }
+  #ME_HEADER {
+    display: block;
+  }
 
-.header .me {
-    /* background-color: red; */
-    width: 100%;
-    height: 100%;
-    flex-grow: 1;
-    padding: 0
-}
+  .header {
+    align-items: center;
+  }
+  .header .title {
+    padding: 1.45rem 1.0875rem;
+  }
 
-.header .me img {
-    /* background-color: red; */
-    width: 100%;
-    position: relative;
-    padding: 0
-
-}
-
-.header .title {
-    /* background-color: lime; */
-    padding: 1.0875rem 1.0875rem;
-
-}
-
-.sidebar {
+  .sidebar {
     display: none;
-}
+  }
 
-div.body {
+  div.body {
     margin-left: 0;
   }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
-  .sidebar {
-    display: none;
-  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: #222222;
 }
