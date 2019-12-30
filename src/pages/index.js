@@ -46,6 +46,8 @@ const IndexPage = () => (
 
     <div id="media" className="section">
       <h1> Media Library</h1>
+      <Link to="/#top" className="backToTop">Back to top</Link>
+      <br />
     </div>
   </Layout>
 )

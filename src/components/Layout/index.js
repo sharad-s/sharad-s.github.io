@@ -7,8 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Loadable from "@loadable/component"
-import smoothScroll from "smooth-scroll"
 // import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./Header"
@@ -29,16 +27,17 @@ const Layout = ({ children }) => {
   //   }
   // `)
   
-  let sidebarClass
+  let sidebarClass = "sidebar"
   if (typeof window !== "undefined") {
-    smoothScroll('a[href*="#"]')
+    require("smooth-scroll")('a[href*="#"]')
 
     sidebarClass = (window.location.pathname === "/" ) ? "sidebar" : "sidebar hidden"
   }
 
+
   return (
     <>
-      <div className={sidebarClass}>
+      <div className={`${sidebarClass}`}>
         <Sidebar />
       </div>
       <div id="top" className="body">
