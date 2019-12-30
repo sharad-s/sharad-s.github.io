@@ -14,6 +14,15 @@ const IndexPage = () => (
       <p>
         Poop, Pee, More Pee, Pooping, Peeing, Peeing and Pooping, Etc.
       </p>
+
+      <br />
+      <h2> Where can you find me? </h2>
+
+      <a href="https://www.linkedin.com/in/sharad-shekar/" target="_blank"  style={{textDecoration:"underline"}}>LinkedIn</a>, {' '}
+      <a href="https://www.github.com/sharad-s/" target="_blank" style={{textDecoration:"underline"}}>Github</a>, {' '}
+      <a href="https://www.soundcloud.com/sharad_s/" target="_blank" style={{textDecoration:"underline"}}>Soundcloud</a>
+
+
     </div>
 
     <div id="work" className="section">
@@ -42,6 +51,12 @@ const IndexPage = () => (
           </Link>
         </li>
       </ul>
+    </div>
+
+    <div id="projects" className="section">
+      <h1>Projects</h1>
+      <Link to="/#top" className="backToTop">Back to top</Link>
+      <br />
     </div>
 
     <div id="media" className="section">

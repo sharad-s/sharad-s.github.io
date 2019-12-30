@@ -14,8 +14,6 @@ import Sidebar from "./Navigation"
 import "./layout.css"
 import "./main.css"
 
-
-
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -26,14 +24,18 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
-  
+
   let sidebarClass = "sidebar"
   if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]')
+    const smoothScroll = require("smooth-scroll")
+    smoothScroll('a[href*="#"]', {
+      speed: 800,
+      topOnEmptyHash: true,
+    })
 
-    sidebarClass = (window.location.pathname === "/" ) ? "sidebar" : "sidebar hidden"
+    sidebarClass =
+      window.location.pathname === "/" ? "sidebar" : "sidebar hidden"
   }
-
 
   return (
     <>

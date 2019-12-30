@@ -34,14 +34,20 @@ div.content {
 
 #about {
   padding-top: 30vh;
+  background-color: #FFFFFF ;
 }
 
-#work{
-  /* background-color: #A52A2A */
+#work {
+  background-color: #FCF0F2 ;
+  color: #1D5962
+}
+
+#projects {
+  background-color: #F9DCE1;
 }
 
 #media { 
-  /* background-color:#FFB6C1; */
+  background-color:#FFB6C1;
 }
 
 .backToTop{
@@ -130,8 +136,9 @@ a:hover:not(.active) {
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-  #ME_HEADER {
+  #ME {
     display: block;
+    width: 80px !important
   }
 
   .header {
@@ -153,7 +160,7 @@ a:hover:not(.active) {
   }
 
   .sidebar .me {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .sidebar nav ul {
@@ -168,16 +175,15 @@ a:hover:not(.active) {
 
   .section{
     padding: 1px 16px;
-    padding-left: 1.45rem;
-    padding-right: 1.45rem;
+    padding-left: 2.45rem;
+    padding-right: 2.45rem;
     padding-top: 50px;
-
+    height: 100vh
   }
 
   #about{
     /* background-color: teal; */
-    padding-top:18rem;
-    padding-left: 2.45rem;
+    padding-top:12rem;
     /* padding-right: 1.45rem; */
   }
 
