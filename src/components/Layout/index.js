@@ -8,11 +8,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import smoothScroll from "smooth-scroll"
 
 import Header from "./Header"
 import Sidebar from "./Navigation"
 import "./layout.css"
 import "./main.css"
+
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,16 +28,19 @@ const Layout = ({ children }) => {
     }
   `)
 
+  if (typeof window !== "undefined") {
+    smoothScroll('a[href*="#"]')
+  }
+
   return (
     <>
-        <div className="sidebar">
-          <Sidebar />
-        </div>
-        <div id="top" className="body">
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div id="top" className="body">
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="content">
           <main>{children}</main>
-         
         </div>
       </div>
     </>

@@ -47,6 +47,12 @@ div.content {
   background-color: white;
 }
 
+/* Section CSS */
+.section {
+  height: 100vh;
+  padding-top: 50px;
+}
+
 /* The side navigation menu */
 .sidebar {
   /* margin-top: 20px; */
@@ -131,3 +137,9 @@ p,
 a {
   color: #222222;
 }
+
+
+#about {
+  padding-top: 25vh;
+}
+

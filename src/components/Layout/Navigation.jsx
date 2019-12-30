@@ -1,8 +1,17 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useState } from "react"
 import { Link } from "gatsby"
 import scrollToElement from "scroll-to-element"
 
-const Navigation = () => {
+const activeLinks = {
+  ABOUT: "about",
+  WORK: "work",
+  MEDIA: "media",
+}
+
+const Navigation = props => {
+  console.log(props)
+  const [activeLink, setActiveLink] = useState(activeLinks.ABOUT)
+
   const handleLinkClick = (e, target) => {
     // NODE-SAFE CODE
     // Gatsby uses Node to generate our pages.
@@ -11,18 +20,17 @@ const Navigation = () => {
     // in some sort of node-safe if statement like this:
 
     if (typeof window !== "undefined") {
-      // First, are we on the home page?
+      // Are we on the home page?
       // If so, let's scroll to the desired block,
       // which was passed in as an onClick method on our <Link />.
       // If an event was also passed, we'll preventDefault()
-
-      if (window.location.pathname === "/") {
-        if (e) e.preventDefault()
-        scrollToElement(target, {
-          offset: -50, // Offset a fixed header if you please
-          duration: 1000,
-        })
-      }
+      // if (window.location.pathname === "/") {
+      //   if (e) e.preventDefault()
+      //   scrollToElement(target, {
+      //     offset: -50, // Offset a fixed header if you please
+      //     duration: 800,
+      //   })
+      // }
     }
   }
 
@@ -39,8 +47,8 @@ const Navigation = () => {
         <ul>
           <li>
             <Link
-              className=""
-              onClick={e => handleLinkClick(e, "#top")}
+              activeClassName="active"
+              // onClick={e => handleLinkClick(e, "#top")}
               to="/#top"
             >
               💩About Me
@@ -48,8 +56,8 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              className=""
-              onClick={e => handleLinkClick(e, "#work")}
+              activeClassName="active"
+              // onClick={e => handleLinkClick(e, "#work")}
               to="/#work"
             >
               👨🏽‍💻Work
@@ -57,8 +65,8 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              className=""
-              onClick={e => handleLinkClick(e, "#media")}
+              activeClassName="active"
+              // onClick={e => handleLinkClick(e, "#media")}
               to="/#media"
             >
               📚Media
