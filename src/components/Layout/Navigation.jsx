@@ -64,14 +64,6 @@ const Navigation = () => {
               📚Media
             </Link>
           </li>
-          <li>
-            <Link
-              className=""
-              to="/page-2"
-            >
-              Page 2
-            </Link>
-          </li>
         </ul>
       </nav>
       {/* <footer className="footer">
