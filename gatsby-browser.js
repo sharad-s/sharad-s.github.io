@@ -15,10 +15,10 @@ const onRouteUpdate = ({ location }) => {
 const checkHash = location => {
   let { hash } = location
   if (hash) {
-    // scrollToElement(hash, {
-    //   offset: -50,
-    //   duration: 1000,
-    // })
+    scrollToElement(hash, {
+      offset: -50,
+      duration: 1000,
+    })
   }
 }
 

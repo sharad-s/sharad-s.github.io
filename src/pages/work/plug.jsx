@@ -6,9 +6,11 @@ import SEO from "../../components/SEO"
 
 const SecondPage = () => (
   <Layout>
+    <div className="section">
     <SEO title="Work Experience" />
     <h1>Plug.af</h1>
     <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 
