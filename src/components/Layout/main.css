@@ -1,0 +1,131 @@
+.header {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: 20px; */
+
+}
+
+.me {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ME {
+    width: 100px !important;
+    border-radius: 5px;
+    margin:20px 20px
+  }
+
+#ME_HEADER {
+    width: 80px !important;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: none;
+
+  }
+
+.header .title {
+    /* background-color: lime; */
+    padding: 2.45rem 1.0875rem;
+    color:black;
+    text-align: center;
+
+}
+
+
+div.body {
+    margin-left: 200px;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    padding: 1px 16px;
+    background-color: lime;
+    height:100%
+  }
+
+/* The side navigation menu */
+.sidebar {
+  /* margin-top: 20px; */
+  padding: 0px 16px;
+  width: 200px;
+  /* background-color: #f1f1f1; */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar .a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar .a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar .a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+ .header {
+     flex-direction: column;
+     justify-content: center;
+ }
+
+.header .me {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    padding: 0
+}
+
+.header .me img {
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    padding: 0
+
+}
+
+.header .title {
+    /* background-color: lime; */
+    padding: 1.0875rem 1.0875rem;
+
+}
+
+.sidebar {
+    display: none;
+}
+
+div.body {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar {
+    display: none;
+  }
+}
