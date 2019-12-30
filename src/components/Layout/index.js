@@ -7,10 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import Loadable from "@loadable/component"
 import smoothScroll from "smooth-scroll"
+// import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./Header"
+// import Header from "./Header"
 import Sidebar from "./Navigation"
 import "./layout.css"
 import "./main.css"
@@ -18,27 +19,29 @@ import "./main.css"
 
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
+  
+  let sidebarClass
   if (typeof window !== "undefined") {
     smoothScroll('a[href*="#"]')
+
+    sidebarClass = (window.location.pathname === "/" ) ? "sidebar" : "sidebar hidden"
   }
 
   return (
     <>
-      <div className="sidebar">
+      <div className={sidebarClass}>
         <Sidebar />
       </div>
       <div id="top" className="body">
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="content">
           <main>{children}</main>
         </div>

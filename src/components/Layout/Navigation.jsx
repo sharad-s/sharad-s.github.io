@@ -1,12 +1,11 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
-import ScrollableSection, { ScrollableLink } from 'react-update-url-on-scroll';
 
-const activeLinks = {
-  ABOUT: "about",
-  WORK: "work",
-  MEDIA: "media",
-}
+// const activeLinks = {
+//   ABOUT: "about",
+//   WORK: "work",
+//   MEDIA: "media",
+// }
 
 const Navigation = props => {
 
@@ -15,6 +14,7 @@ const Navigation = props => {
       <div className="me">
         <img
           id="ME"
+          alt="selfie"
           src="https://media.licdn.com/dms/image/C4E03AQFdpm7pFzN1Zg/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=6FLt9ZF1wKRAM3T5DTHjbEaXP6iw02oIGvBTiTkXQoY"
         />
         <h2 style={{ textAlign: "center" }}>Sharad Shekar</h2>

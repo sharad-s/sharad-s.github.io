@@ -6,30 +6,6 @@
   /* margin-top: 20px; */
 }
 
-.me {
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-
-#ME {
-  width: 100px !important;
-  border-radius: 5px;
-  margin: 20px 20px;
-}
-
-#ME_HEADER {
-  width: 80px !important;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  display: none;
-}
-
 .header .title {
   /* background-color: lime; */
   padding: 2.45rem 1.0875rem;
@@ -44,15 +20,32 @@ div.body {
 div.content {
   /* padding: 2.45rem 1.0875rem; */
   background-color: white;
-  /* padding-left: 200px; */
 }
 
 /* Section CSS */
 .section {
   height: 100vh;
-  padding-top: 50px;
+  padding-top: 50px;  
   padding-left: 220px;
+}
 
+/* Specific Sections */
+
+
+#about {
+  padding-top: 30vh;
+}
+
+#work{
+  /* background-color: #A52A2A */
+}
+
+#media { 
+  /* background-color:#FFB6C1; */
+}
+
+.backToTop{
+  display: none;
 }
 
 /* The side navigation menu */
@@ -70,13 +63,44 @@ div.content {
   /* box-shadow: 3px 3px 5px grey;; */
 }
 
+.sidebar .me {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#ME {
+  width: 100px !important;
+  border-radius: 5px;
+  margin: 20px 20px;
+}
+
+#ME_HEADER {
+  width: 80px !important;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: none;
+}
+
 .sidebar .footer {
   align-self: flex-end;
   bottom:0px;
-  position: absolute;
+  position: relative;
 }
 
 /* Sidebar links */
+.sidebar nav ul {
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start
+}
+
 .sidebar a {
   color: black;
   text-decoration: none;
@@ -117,8 +141,44 @@ a:hover:not(.active) {
     padding: 1.45rem 1.0875rem;
   }
 
+    /* Sidebar Nav */
   .sidebar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  .hidden {
     display: none;
+  }
+
+  .sidebar .me {
+    margin-bottom: 0px;
+  }
+
+  .sidebar nav ul {
+    flex-direction: row;
+    margin-left: 1.45rem;
+    margin-right: 1.45rem;
+   }
+
+  .backToTop{
+    display: block;
+  }
+
+  .section{
+    padding: 1px 16px;
+    padding-left: 1.45rem;
+    padding-right: 1.45rem;
+    padding-top: 50px;
+
+  }
+
+  #about{
+    /* background-color: teal; */
+    padding-top:18rem;
+    padding-left: 2.45rem;
+    /* padding-right: 1.45rem; */
   }
 
   div.body {
@@ -140,15 +200,3 @@ a {
   color: #222222;
 }
 
-
-#about {
-  padding-top: 30vh;
-}
-
-#work{
-  /* background-color: #A52A2A */
-}
-
-#media { 
-  /* background-color:#FFB6C1; */
-}

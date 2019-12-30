@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import Image from "../components/Image"
+// import Image from "../components/Image"
 import SEO from "../components/SEO"
 
 const IndexPage = () => (
@@ -10,17 +10,18 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="about" className="section">
       <h1>I am Sharad Shekar,</h1>
-      <h1>a creative technologist and AI enthusiast</h1>
+      <h1>the poopoo pee pee man</h1>
       <p>
-        Animation, Design, Writing, AI, ML, Bots, CSS, JavaScript, Ruby, Git,
-        Vim, 3D, XR
+        Poop, Pee, More Pee, Pooping, Peeing, Peeing and Pooping, Etc.
       </p>
     </div>
 
     <div id="work" className="section">
       <h1>Work</h1>
+      <Link to="/#top" className="backToTop">Back to top</Link>
+      <br />
       <ul>
-        <li>
+        <li>  
           <Link className="" to="/work/pizzahut">
             Pizza Hut
           </Link>
