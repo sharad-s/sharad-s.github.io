@@ -26,7 +26,7 @@ const Navigation = props => {
               activeClassName="active"
               to="/#top"
             >
-              💩About Me
+              💩Me
             </Link>
           </li>
           <li>

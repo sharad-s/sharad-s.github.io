@@ -167,6 +167,7 @@ a:hover:not(.active) {
     flex-direction: row;
     margin-left: 1.45rem;
     margin-right: 1.45rem;
+    flex-wrap: wrap;
    }
 
   .backToTop{
