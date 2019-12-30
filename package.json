@@ -17,6 +17,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-update-url-on-scroll": "^3.5.0",
     "scroll-to-element": "^2.0.3",
     "smooth-scroll": "^16.1.0"
   },

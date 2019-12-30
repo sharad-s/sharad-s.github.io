@@ -38,19 +38,21 @@
 }
 
 div.body {
-  margin-left: 200px;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  padding: 2.45rem 1.0875rem;
+  /* padding: 2.45rem 1.0875rem; */
   background-color: white;
+  /* padding-left: 200px; */
 }
 
 /* Section CSS */
 .section {
   height: 100vh;
   padding-top: 50px;
+  padding-left: 220px;
+
 }
 
 /* The side navigation menu */
@@ -143,3 +145,10 @@ a {
   padding-top: 25vh;
 }
 
+#work{
+  /* background-color: #A52A2A */
+}
+
+#media { 
+  /* background-color:#FFB6C1; */
+}
