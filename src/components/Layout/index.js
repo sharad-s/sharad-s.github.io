@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
 
   let sidebarClass = "sidebar"
   if (typeof window !== "undefined") {
-    const smoothScroll = require("smooth-scroll")
-    smoothScroll('a[href*="#"]', {
-      speed: 800,
-      topOnEmptyHash: true,
-    })
+    // const smoothScroll = require("smooth-scroll")
+    // smoothScroll('a[href*="#"]', {
+    //   speed: 800,
+    //   topOnEmptyHash: true,
+    // })
 
     sidebarClass =
       window.location.pathname === "/" ? "sidebar" : "sidebar hidden"

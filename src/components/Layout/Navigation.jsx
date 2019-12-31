@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
+import scrollToElement from "scroll-to-element"
 
 // const activeLinks = {
 //   ABOUT: "about",
@@ -8,6 +9,28 @@ import { Link } from "gatsby"
 // }
 
 const Navigation = props => {
+
+  const handleLinkClick = (e, target) => {
+    // NODE-SAFE CODE
+    // Gatsby uses Node to generate our pages.
+    // Node doesn't know what a window is.
+    // Be sure to wrap any of your browser interactions
+    // in some sort of node-safe if statement like this:
+
+    if (typeof window !== "undefined") {
+      // Are we on the home page?
+      // If so, let's scroll to the desired block,
+      // which was passed in as an onClick method on our <Link />.
+      // If an event was also passed, we'll preventDefault()
+      if (window.location.pathname === "/") {
+        if (e) e.preventDefault()
+        scrollToElement(target, {
+          // offset: -50, // Offset a fixed header if you please
+          duration: 800,
+        })
+      }
+    }
+  }
 
   return (
     <Fragment>
@@ -24,6 +47,7 @@ const Navigation = props => {
           <li>
             <Link
               activeClassName="active"
+              onClick={e => handleLinkClick(e, "#top")}
               to="/#top"
             >
               💩Me
@@ -32,6 +56,7 @@ const Navigation = props => {
           <li>
             <Link
               activeClassName="active"
+              onClick={e => handleLinkClick(e, "#work")}
               to="/#work"
             >
               👨🏽‍💻Work
@@ -40,6 +65,7 @@ const Navigation = props => {
           <li>
             <Link
               activeClassName="active"
+              onClick={e => handleLinkClick(e, "#projects")}
               to="/#projects"
             >
               🛠Projects
@@ -48,6 +74,7 @@ const Navigation = props => {
           <li>
             <Link
               activeClassName="active"
+              onClick={e => handleLinkClick(e, "#media")}
               to="/#media"
             >
               📚Media
