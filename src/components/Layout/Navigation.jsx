@@ -16,9 +16,9 @@ const Navigation = props => {
           alt="selfie"
           src="https://media.licdn.com/dms/image/C4E03AQFdpm7pFzN1Zg/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=6FLt9ZF1wKRAM3T5DTHjbEaXP6iw02oIGvBTiTkXQoY"
         />
-        <h2 style={{ textAlign: "center" }} className="hidden">
+        <h3 style={{ textAlign: "center" }} className="name hidden">
           Sharad Shekar
-        </h2>
+        </h3>
       </div>
       <nav>
         <ul>

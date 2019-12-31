@@ -12,8 +12,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="about" className="section">
       <h1>I am Sharad Shekar,</h1>
-      <h1>the poopoo pee pee man</h1>
-      <p>Poop, Pee, More Pee, Pooping, Peeing, Peeing and Pooping, Etc.</p>
+      <h1>a creative technologist and ML enthusiast</h1>
+      <p>Animation, Design, Writing, AI, ML, Bots, CSS, JavaScript, Ruby, Git, Vim, 3D, XR</p>
 
       {/* <br />
       <h2> Where can you find me? </h2>

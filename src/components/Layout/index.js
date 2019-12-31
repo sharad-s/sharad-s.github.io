@@ -42,10 +42,9 @@ const Layout = ({ children }) => {
       <div className={`${sidebarClass}`}>
         <Sidebar />
       </div>
-      <div id="top" className="body">
-        <div className="content">
-          <main>{children}</main>
-        </div>
+
+      <div id="top" className="content">
+        <main>{children}</main>
       </div>
     </>
   )

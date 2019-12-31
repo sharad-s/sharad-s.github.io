@@ -13,8 +13,7 @@
   margin-bottom: 1px;
 }
 
-div.body {
-}
+
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
@@ -138,7 +137,8 @@ a:hover:not(.active) {
 @media screen and (max-width: 700px) {
   #ME {
     display: block;
-    width: 80px !important
+    width: 80px !important;
+    /* margin-bottom: 0px; */
   }
 
   .header {
@@ -153,6 +153,10 @@ a:hover:not(.active) {
     width: 100%;
     height: auto;
     position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;  
+    background-color: white;
   }
 
   .hidden {
@@ -160,14 +164,26 @@ a:hover:not(.active) {
   }
 
   .sidebar .me {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color:white */
+  }
+
+  .sidebar .name {
+    margin: 20px 10px;
+  }
+
+  .sidebar nav {
+    width: 100%;
   }
 
   .sidebar nav ul {
     flex-direction: row;
-    margin-left: 1.45rem;
-    margin-right: 1.45rem;
-    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: space-evenly;
    }
 
   .backToTop{
@@ -188,9 +204,7 @@ a:hover:not(.active) {
     /* padding-right: 1.45rem; */
   }
 
-  div.body {
-    margin-left: 0;
-  }
+
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
