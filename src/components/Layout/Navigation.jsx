@@ -1,7 +1,6 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
-import scrollToElement from "scroll-to-element"
-
+import { handleLinkClick } from "../../utils/helpers"
 // const activeLinks = {
 //   ABOUT: "about",
 //   WORK: "work",
@@ -9,29 +8,6 @@ import scrollToElement from "scroll-to-element"
 // }
 
 const Navigation = props => {
-
-  const handleLinkClick = (e, target) => {
-    // NODE-SAFE CODE
-    // Gatsby uses Node to generate our pages.
-    // Node doesn't know what a window is.
-    // Be sure to wrap any of your browser interactions
-    // in some sort of node-safe if statement like this:
-
-    if (typeof window !== "undefined") {
-      // Are we on the home page?
-      // If so, let's scroll to the desired block,
-      // which was passed in as an onClick method on our <Link />.
-      // If an event was also passed, we'll preventDefault()
-      if (window.location.pathname === "/") {
-        if (e) e.preventDefault()
-        scrollToElement(target, {
-          // offset: -50, // Offset a fixed header if you please
-          duration: 800,
-        })
-      }
-    }
-  }
-
   return (
     <Fragment>
       <div className="me">
@@ -40,11 +16,13 @@ const Navigation = props => {
           alt="selfie"
           src="https://media.licdn.com/dms/image/C4E03AQFdpm7pFzN1Zg/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=6FLt9ZF1wKRAM3T5DTHjbEaXP6iw02oIGvBTiTkXQoY"
         />
-        <h2 style={{ textAlign: "center" }} className="hidden">Sharad Shekar</h2>
+        <h2 style={{ textAlign: "center" }} className="hidden">
+          Sharad Shekar
+        </h2>
       </div>
       <nav>
         <ul>
-          <li>
+          <li className="hidden">
             <Link
               activeClassName="active"
               onClick={e => handleLinkClick(e, "#top")}
