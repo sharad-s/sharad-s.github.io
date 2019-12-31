@@ -13,8 +13,6 @@
   margin-bottom: 1px;
 }
 
-
-
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   /* padding: 2.45rem 1.0875rem; */
@@ -47,6 +45,12 @@ div.content {
 
 #media { 
   background-color:#FFB6C1;
+}
+
+.footer {
+  bottom:0px;
+  position: relative;
+  background-color: #FFB6C1;
 }
 
 .backToTop{
@@ -91,11 +95,7 @@ div.content {
   display: none;
 }
 
-.sidebar .footer {
-  align-self: flex-end;
-  bottom:0px;
-  position: relative;
-}
+
 
 /* Sidebar links */
 .sidebar nav ul {

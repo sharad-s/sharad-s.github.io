@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
     //   topOnEmptyHash: true,
     // })
 
+    // Hide sidebar if not on root page
     sidebarClass =
       window.location.pathname === "/" ? "sidebar" : "sidebar hidden"
   }
