@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"8qGA":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),l=a("Wbzz"),r=a("Zttt"),o=a("EYWl");t.default=function(){return c.a.createElement(r.a,null,c.a.createElement("div",{className:"section"},c.a.createElement(o.a,{title:"Work Experience"}),c.a.createElement("h1",null,"Plug.af"),c.a.createElement(l.Link,{to:"/#work"},"Go back")))}}}]);
+//# sourceMappingURL=component---src-pages-work-plug-jsx-d0ffeb0a75ff3a965455.js.map
