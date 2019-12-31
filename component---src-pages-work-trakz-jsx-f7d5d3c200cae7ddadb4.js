@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{CAfM:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),l=a("Wbzz"),o=a("Zttt"),r=a("EYWl");t.default=function(){return c.a.createElement(o.a,null,c.a.createElement("div",{className:"section"},c.a.createElement(r.a,{title:"Work Experience"}),c.a.createElement("h1",null,"Trakz.co"),c.a.createElement(l.Link,{to:"/"},"Go back to the homepage")))}}}]);
+//# sourceMappingURL=component---src-pages-work-trakz-jsx-f7d5d3c200cae7ddadb4.js.map
