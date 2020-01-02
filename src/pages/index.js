@@ -12,7 +12,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="about" className="section">
       <h1>I am Sharad Shekar, <br/>
-      a creative technologist <br /> and professional crapper
+      a creative technologist and professional crapper
       </h1>
       <p>
         AI, ML, CSS, JavaScript, Python, Golang, 3D, XR, Animation, Design, Art, Music 
