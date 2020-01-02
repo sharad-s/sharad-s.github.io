@@ -19,8 +19,6 @@ const IndexPage = () => (
       </p>
       <br />
       <h3> Find me here: </h3>
-      <ul>
-        <li>
           {" "}
           <a
             href="https://docdro.id/1cpDEu2/"
@@ -29,8 +27,7 @@ const IndexPage = () => (
           >
             Resume
           </a>
-        </li>
-        <li>
+        {', '}
           <a
             href="https://www.linkedin.com/in/sharad-shekar/"
             target="_blank"
@@ -38,8 +35,7 @@ const IndexPage = () => (
           >
             LinkedIn
           </a>
-        </li>
-        <li>
+        {',  '}
           <a
             href="https://www.github.com/sharad-s/"
             target="_blank"
@@ -47,8 +43,7 @@ const IndexPage = () => (
           >
             Github
           </a>
-        </li>
-        <li>
+          {',  '}
           <a
             href="https://www.soundcloud.com/sharad_s/"
             target="_blank"
@@ -56,16 +51,13 @@ const IndexPage = () => (
           >
             Soundcloud
           </a>
-        </li>
-        <li>
+          {',  '}
           <a
             href="mailto:sharadshekar@gmail.com"
             style={{ textDecoration: "underline" }}
           >
             Email
           </a>
-        </li>
-      </ul>
     {/* <img id="GIF" src="https://media0.giphy.com/media/Ckq1NXDHFlvfq/giphy.gif " /> */}
     </div>
 

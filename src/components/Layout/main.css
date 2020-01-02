@@ -35,6 +35,10 @@ div.content {
   background-color: #FFFFFF ;
 }
 
+#about ul {
+  display: flex;
+}
+
 #GIF {
   /* background-color: blue; */
   position: absolute;
