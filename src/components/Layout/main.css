@@ -29,9 +29,18 @@ div.content {
 /* Specific Sections */
 
 
+
 #about {
   padding-top: 30vh;
   background-color: #FFFFFF ;
+}
+
+#GIF {
+  /* background-color: blue; */
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width:200px;
 }
 
 #work {

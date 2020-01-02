@@ -11,43 +11,62 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div id="about" className="section">
-      <h1>I am Sharad Shekar,</h1>
-      <h1>a creative technologist and ML enthusiast</h1>
+      <h1>I am Sharad Shekar, <br/>
+      a creative technologist <br />and ML enthusiast
+      </h1>
       <p>
-        Animation, Design, Art, AI, ML, CSS, JavaScript, Python, Golang, 3D, XR
+        AI, ML, CSS, JavaScript, Python, Golang, 3D, XR, Animation, Design, Art, Music 
       </p>
+      <br />
       <h3> Find me here: </h3>
-      <a
-        href="https://docdro.id/1cpDEu2/"
-        target="_blank"
-        style={{ textDecoration: "underline" }}
-      >
-        Resume
-      </a>
-      ,{" "}
-      <a
-        href="https://www.linkedin.com/in/sharad-shekar/"
-        target="_blank"
-        style={{ textDecoration: "underline" }}
-      >
-        LinkedIn
-      </a>
-      ,{" "}
-      <a
-        href="https://www.github.com/sharad-s/"
-        target="_blank"
-        style={{ textDecoration: "underline" }}
-      >
-        Github
-      </a>
-      ,{" "}
-      <a
-        href="https://www.soundcloud.com/sharad_s/"
-        target="_blank"
-        style={{ textDecoration: "underline" }}
-      >
-        Soundcloud
-      </a>
+      <ul>
+        <li>
+          {" "}
+          <a
+            href="https://docdro.id/1cpDEu2/"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            Resume
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sharad-shekar/"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.github.com/sharad-s/"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            Github
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.soundcloud.com/sharad_s/"
+            target="_blank"
+            style={{ textDecoration: "underline" }}
+          >
+            Soundcloud
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:sharadshekar@gmail.com"
+            style={{ textDecoration: "underline" }}
+          >
+            Email
+          </a>
+        </li>
+      </ul>
+    {/* <img id="GIF" src="https://media0.giphy.com/media/Ckq1NXDHFlvfq/giphy.gif " /> */}
     </div>
 
     <div id="work" className="section">
