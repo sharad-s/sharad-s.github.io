@@ -22,17 +22,38 @@ div.content {
 /* Section CSS */
 .section {
   height: 100vh;
-  padding-top: 50px;  
+  padding-top: 50px;
   padding-left: 220px;
 }
 
 /* Specific Sections */
 
+#construction {
+  /* background-color: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%); */
+  /* Position */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
 
+  /* Width */
+  min-width: 250px;
+  padding: 16px;
+
+  /* Text */
+  text-align: center;
+
+  /* Styling */
+  border-radius: 2px;
+  background-color: yellow;
+  -webkit-box-shadow: 7px 10px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 10px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 10px 0px rgba(0,0,0,0.75);
+}
 
 #about {
   padding-top: 30vh;
-  background-color: #FFFFFF ;
+  background-color: #ffffff;
 }
 
 #about ul {
@@ -44,36 +65,36 @@ div.content {
   position: absolute;
   right: 5px;
   bottom: 5px;
-  width:200px;
+  width: 200px;
 }
 
 #work {
-  background-color: #FCF0F2 ;
-  color: #1D5962
+  background-color: #fcf0f2;
+  color: #1d5962;
 }
 
 #projects {
-  background-color: #F9DCE1;
+  background-color: #f9dce1;
 }
 
-#media { 
-  background-color:#FFB6C1;
+#media {
+  background-color: #ffb6c1;
 }
 
 .footer {
-  bottom:0px;
+  bottom: 0px;
   position: relative;
-  background-color: #FFB6C1;
+  background-color: #ffb6c1;
 }
 
-.backToTop{
+.backToTop {
   display: none;
 }
 
 /* The side navigation menu */
 .sidebar {
   /* margin-top: 20px; */
-  padding: 1px 16px;  
+  padding: 1px 16px;
   width: 200px;
   background-color: transparent;
   position: fixed;
@@ -108,15 +129,13 @@ div.content {
   display: none;
 }
 
-
-
 /* Sidebar links */
 .sidebar nav ul {
   /* background-color: tomato; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .sidebar a {
@@ -127,11 +146,11 @@ div.content {
 /* Active/current link */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a.active {
@@ -161,14 +180,14 @@ a:hover:not(.active) {
     padding: 1.45rem 1.0875rem;
   }
 
-    /* Sidebar Nav */
+  /* Sidebar Nav */
   .sidebar {
     width: 100%;
     height: auto;
     position: absolute;
     flex-direction: row;
-    align-items: center ;
-    padding: 0px;  
+    align-items: center;
+    padding: 0px;
     background-color: white;
   }
 
@@ -198,31 +217,29 @@ a:hover:not(.active) {
     margin: 20px;
     justify-content: space-evenly;
     align-items: center;
-   }
+  }
 
-   .sidebar nav ul li {
-    padding: 10px
-   }
+  .sidebar nav ul li {
+    padding: 10px;
+  }
 
-  .backToTop{
+  .backToTop {
     display: block;
   }
 
-  .section{
+  .section {
     padding: 1px 16px;
     padding-left: 2.45rem;
     padding-right: 2.45rem;
     padding-top: 50px;
-    height: 100vh
+    height: 100vh;
   }
 
-  #about{
+  #about {
     /* background-color: teal; */
-    padding-top:10rem;
+    padding-top: 10rem;
     /* padding-right: 1.45rem; */
   }
-
-
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -238,4 +255,3 @@ p,
 a {
   color: #222222;
 }
-

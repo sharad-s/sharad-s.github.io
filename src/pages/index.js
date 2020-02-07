@@ -5,60 +5,66 @@ import Layout from "../components/Layout"
 // import Image from "../components/Image"
 import SEO from "../components/SEO"
 
+// import { Spiral } from "react-audible-visuals"
+
 import { handleLinkClick } from "../utils/helpers"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div id="construction">
+      <span>🚧 Under Construction  🚧</span>
+    </div>
     <div id="about" className="section">
-      <h1>I am Sharad Shekar, <br/>
-      a creative technologist and professional crapper
+      <h1>
+        I am Sharad Shekar, <br />a creative technologist and AI enthusiast
       </h1>
       <p>
-        AI, ML, CSS, JavaScript, Python, Golang, 3D, XR, Animation, Design, Art, Music 
+        AI, ML, CSS, JavaScript, Python, Golang, 3D, XR, Animation, Design, Art,
+        Music
       </p>
       <br />
-      <h3> Find me here: </h3>
-          {" "}
-          <a
-            href="https://docdro.id/1cpDEu2/"
-            target="_blank"
-            style={{ textDecoration: "underline" }}
-          >
-            Resume
-          </a>
-        {', '}
-          <a
-            href="https://www.linkedin.com/in/sharad-shekar/"
-            target="_blank"
-            style={{ textDecoration: "underline" }}
-          >
-            LinkedIn
-          </a>
-        {',  '}
-          <a
-            href="https://www.github.com/sharad-s/"
-            target="_blank"
-            style={{ textDecoration: "underline" }}
-          >
-            Github
-          </a>
-          {',  '}
-          <a
-            href="https://www.soundcloud.com/sharad_s/"
-            target="_blank"
-            style={{ textDecoration: "underline" }}
-          >
-            Soundcloud
-          </a>
-          <br />
-          <a
-            href="mailto:sharadshekar@gmail.com"
-            style={{ textDecoration: "underline" }}
-          >
-            Email
-          </a>
-    {/* <img id="GIF" src="https://media0.giphy.com/media/Ckq1NXDHFlvfq/giphy.gif " /> */}
+      <h3> Find me here: </h3>{" "}
+      <a
+        href="https://docdro.id/1cpDEu2/"
+        target="_blank"
+        style={{ textDecoration: "underline" }}
+      >
+        Resume
+      </a>
+      {", "}
+      <a
+        href="https://www.linkedin.com/in/sharad-shekar/"
+        target="_blank"
+        style={{ textDecoration: "underline" }}
+      >
+        LinkedIn
+      </a>
+      {",  "}
+      <a
+        href="https://www.github.com/sharad-s/"
+        target="_blank"
+        style={{ textDecoration: "underline" }}
+      >
+        Github
+      </a>
+      {",  "}
+      <a
+        href="https://www.soundcloud.com/sharad_s/"
+        target="_blank"
+        style={{ textDecoration: "underline" }}
+      >
+        Soundcloud
+      </a>
+      <br />
+      <a
+        href="mailto:sharadshekar@gmail.com"
+        style={{ textDecoration: "underline" }}
+      >
+        Email
+      </a>
+      {/* <img id="GIF" src="https://media0.giphy.com/media/Ckq1NXDHFlvfq/giphy.gif " /> */}
+      {/* <Spiral /> */}
     </div>
 
     <div id="work" className="section">
@@ -119,11 +125,11 @@ const IndexPage = () => (
       <br />
     </div>
 
-    <footer className="footer">
+    {/* <footer className="footer">
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </footer>
+    </footer> */}
   </Layout>
 )
 
