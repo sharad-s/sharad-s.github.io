@@ -26,7 +26,7 @@ const IndexPage = () => (
       <br />
       <h3> Find me here: </h3>{" "}
       <a
-        href="https://docdro.id/1cpDEu2/"
+        href="https://drive.google.com/open?id=1VF2xl-mBi8d1MHQN0ySn8WELDYOK4sM-"
         target="_blank"
         style={{ textDecoration: "underline" }}
       >
