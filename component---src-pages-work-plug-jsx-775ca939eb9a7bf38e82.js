@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"8qGA":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),c=n("Wbzz"),o=n("Zttt"),r=n("EYWl");t.default=function(){return l.a.createElement(o.a,null,l.a.createElement(r.a,{title:"Work Experience"}),l.a.createElement("h1",null,"Plug.af"),l.a.createElement(c.Link,{to:"/"},"Go back to the homepage"))}}}]);
-//# sourceMappingURL=component---src-pages-work-plug-jsx-775ca939eb9a7bf38e82.js.map
