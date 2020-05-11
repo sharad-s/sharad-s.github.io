@@ -1,10 +1,16 @@
 import React from 'react';
+import loadable from "@loadable/component"
 import AudioPlayer from "../AudioPlayer"
-import { Spiral } from "react-audible-visuals"
+// import Visualizer from "../Visualizer"
+
+// import  Spiral  from 'react-audible-visuals'
+// const Spiral = loadable.lib(() => import('react-audible-visuals'))
+const Spiral = loadable(() => import('../Visualizer'))
+
+
 
 const About = () => {
-  const audioRef = React.useRef(null)
-
+    const audioRef = React.useRef(null)
     return (
         <div id="about" className="section">
             <h1>
@@ -66,7 +72,7 @@ const About = () => {
                     audioRef.current.play()
                 }
             }}>
-                <Spiral ref={audioRef} />
+                <Spiral audioRef={audioRef} />
             </div>
         </div>
     )

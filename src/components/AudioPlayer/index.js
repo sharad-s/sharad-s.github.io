@@ -2,6 +2,8 @@ import React, { useState } from "react"
 
 const cors = "https://cors-anywhere.herokuapp.com/"
 
+const randNum = n => Math.floor(Math.random() * (n+1));
+
 export const AudioPlayer = React.forwardRef((props, ref) => {
     const [audioURLs] = useState([
         "https://a.clyp.it/cwvlsmnd.mp3", //rain
@@ -17,7 +19,8 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
         // 'https://a.clyp.it/p2fpdn5n.mp3', // SHANDREW
         // "https://a.clyp.it/qohhjp5p.mp3" //BEAT2
     ])
-    const [index, setIndex] = useState(0)
+
+    const [index, setIndex] = useState(randNum(audioURLs.length))
     const [src, setSrc] = useState(cors + audioURLs[index])
 
     const getURL = () => {
@@ -45,7 +48,7 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
             autoPlay={true}
             style={{ zIndex: 100 }}
             onEnded={handleEnded}
-            autoPlay="true"
+            autoPlay={true}
             style={{ display: "none" }}
         />
     )
