@@ -1,15 +1,21 @@
 import Typography from "typography"
-import funstonTheme from 'typography-theme-funston'
-import moragaTheme from 'typography-theme-moraga'
+// import funstonTheme from 'typography-theme-funston'
+// import moragaTheme from 'typography-theme-moraga'
 
-
-let typography;
+let typography
 
 typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.666,
-  headerFontFamily: ['Raleway', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: [
+    "Raleway",
+    "Helvetica Neue",
+    "Segoe UI",
+    "Helvetica",
+    "Arial",
+    "sans-serif",
+  ],
+  bodyFontFamily: ["Georgia", "serif"],
 })
 
 // typography = new Typography(moragaTheme)

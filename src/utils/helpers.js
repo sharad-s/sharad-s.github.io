@@ -1,6 +1,5 @@
 import scrollToElement from "scroll-to-element"
 
-
 const scrollToCoord = top => {
   // invoke scroll, with behavior smooth (not supported in Safari as of writing)
   window.scroll({

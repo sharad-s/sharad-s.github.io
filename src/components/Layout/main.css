@@ -61,11 +61,30 @@ div.content {
 }
 
 #GIF {
-  /* background-color: blue; */
+  background-color: blue;
   position: absolute;
   right: 5px;
   bottom: 5px;
   width: 200px;
+  z-index: 100;
+}
+
+#AUDIO {
+  visibility: none;
+}
+
+#VISUAL {
+  height: 50%;
+  width: 60%;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  /* background: black; */
+  padding-top: 50px;
+}
+#VISUAL:hover {
+  cursor: pointer
 }
 
 #work {

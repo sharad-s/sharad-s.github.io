@@ -2932,7 +2932,7 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-compass-vertical-rhythm@^1.2.1, compass-vertical-rhythm@^1.4.5:
+compass-vertical-rhythm@^1.4.5:
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz#4baa8d7068fda164d3675d706775d7547e8750f5"
   integrity sha512-bJo3IYX7xmmZCDYjrT2XolaiNjGZ4E2JvUGxpdU0ecbH4ZLK786wvc8aHKVrGrKct9JlkmJbUi8YLrQWvOc+uA==
@@ -9658,6 +9658,13 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-audible-visuals@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-audible-visuals/-/react-audible-visuals-1.0.0.tgz#b8dfed3c2266514288b4178243e5043b424e4752"
+  integrity sha512-AvIrqSemqVk1nijWBsSwxgrTcIH9ugE8clLJjU9cWWYN3WnBVW5oJfCrkCfPt0KePpNWWS8IAJmMPbSVOH2rVA==
+  dependencies:
+    three "0.81.0"
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -11304,6 +11311,11 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+three@0.81.0:
+  version "0.81.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.81.0.tgz#bf9b8b9757ee584c2b01bd25c9c0a16e6f9b88f6"
+  integrity sha1-v5uLl1fuWEwrAb0lycChbm+biPY=
+
 through2@^2.0.0, through2@^2.0.1:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
@@ -11526,32 +11538,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typography-breakpoint-constants@^0.16.19:
-  version "0.16.19"
-  resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.16.19.tgz#e0e89147749562cbb46ce76c47ff0f73372765e7"
-  integrity sha512-vXjfV9hwAXIOf5+U5GN137ahBkK+sj1TJu/5ksmP+8XB/D80lmGb/m0nKviWaQ3t7HLrK848VGrFS+6E2vcmVg==
-
 typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
-
-typography-theme-funston@^0.16.19:
-  version "0.16.19"
-  resolved "https://registry.yarnpkg.com/typography-theme-funston/-/typography-theme-funston-0.16.19.tgz#fe543c337cad4af67911cdb2004cb641045b92a9"
-  integrity sha512-0C6PAfgZju6is1Dys3sK06huefxFFhf+Y+1l+5G3TVXjJds27IrHSggdUDmTS/nxtTLo1v4zbNtu1Z1W5UNb/g==
-  dependencies:
-    gray-percentage "^2.0.0"
-    typography-breakpoint-constants "^0.16.19"
-
-typography-theme-moraga@^0.16.19:
-  version "0.16.19"
-  resolved "https://registry.yarnpkg.com/typography-theme-moraga/-/typography-theme-moraga-0.16.19.tgz#275238a92d08d540f937b8d38590ebfb7b22d858"
-  integrity sha512-POIMoW6xqRTGeBtT0cbrrzL+eKj7Z+A+Wzu5kvtgJFY7lZ7KA9TcJBB2YuspLd2yHq5YMxiUBDQiHedb19ttww==
-  dependencies:
-    compass-vertical-rhythm "^1.2.1"
-    gray-percentage "^2.0.0"
-    typography-breakpoint-constants "^0.16.19"
 
 typography@^0.16.19:
   version "0.16.19"
