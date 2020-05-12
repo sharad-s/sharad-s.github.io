@@ -9680,10 +9680,10 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-audible-visuals@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-audible-visuals/-/react-audible-visuals-1.0.2.tgz#0c872e4d5a80169ac18db5e9b561183688f00006"
-  integrity sha512-YXdRQgbb1EfqIgCgUWKzW9DF5a79zcsJrYO3Bg7C7T0FAehcVyIUGD6qzVe1m/r5ROP0XVkaZw64XAaXj2Zh/g==
+react-audio-visuals@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-audio-visuals/-/react-audio-visuals-0.1.0.tgz#ca93b590722d0368f41c04d13963ebaf5bfe2c55"
+  integrity sha512-ZeUZSOXMH7lMmt/ZQlw+2myJuEpGAu8K2/WuJiFeW8FHUnyI3G6kk68kKsx3MdHItr6LqxTLUJdO64qFj+uYSw==
   dependencies:
     three "0.81.0"
 
