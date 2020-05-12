@@ -8,7 +8,6 @@ import SEO from "../components/SEO"
 // Sections
 import About from "../components/sections/About"
 
-
 import { handleLinkClick } from "../utils/helpers"
 
 const IndexPage = () => {
@@ -20,7 +19,6 @@ const IndexPage = () => {
         <span>🚧 Under Construction  🚧</span>
       </div> */}
       <About />
-      
 
       <div id="work" className="section">
         <h1>Work</h1>
