@@ -97,23 +97,37 @@ div.content {
   background: black;
   padding-top: 10%;
   padding-right: 50px;
-
 }
+
 #VISUAL:hover {
-  cursor: pointer
+  cursor: pointer;
+}
+
+#PLAY_BTN {
+  border: none;
+  background:none;
+  color: white;
+  font-size: 20px;
+}
+
+#PLAY_BTN:hover {
+  cursor: pointer;
 }
 
 #work {
-  background-color: #ffb6c1;
+  /* background-color: #ffb6c1; */
+  background-color: #C25165;
   color: #1d5962;
 }
 
 #projects {
-  background-color: #f9dce1;
+  /* background-color: #f9dce1; */
+  background-color: #DE788A;
 }
 
 #media {
-  background-color: #fcf0f2;
+  /* background-color: #fcf0f2; */
+  background-color: #ffb6c1;
 }
 
 .footer {

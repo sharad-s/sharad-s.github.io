@@ -9,16 +9,30 @@ const Spiral = loadable(() => import("../Visualizer"))
 
 const About = () => {
   const audioRef = React.useRef(null)
+  const [isPlaying, setIsPlaying] = React.useState(false)
+
+  const renderedPlayBtn = isPlaying ? "⏸" : "▶️"
+
+  const handleClick = () =>  {
+    if (!audioRef.current.paused) {
+      audioRef.current.pause()
+      setIsPlaying(false)
+    } else {
+      audioRef.current.play()
+      setIsPlaying(true)
+    }
+  }
+
   return (
     <div id="about" className="section">
-      <h1 style={{color:"#FFF2F7"}} className="ontop">
+      <h1 style={{ color: "#FFF2F7" }} className="ontop">
         Sharad Shekar,
         <br />
-        <span style={{color:"#FFDAE7"}}>creative technologist</span>
+        <span style={{ color: "#FFDAE7" }}>creative tech enthusiast</span>
       </h1>
       <p>AI, ML, JavaScript, Python, Golang, 3D, XR, CSS, Design, Art, Music</p>
       <br />
-      <h3 style={{color:"#FFF2F7"}}> Find me here: </h3>{" "}
+      <h3 style={{ color: "#FFF2F7" }}> Find me here: </h3>{" "}
       <a
         href="https://drive.google.com/open?id=1VF2xl-mBi8d1MHQN0ySn8WELDYOK4sM-"
         target="_blank"
@@ -63,15 +77,13 @@ const About = () => {
       </div>
       <div
         id="VISUAL"
-        onClick={() => {
-          if (!audioRef.current.paused) {
-            audioRef.current.pause()
-          } else {
-            audioRef.current.play()
-          }
-        }}
+        onClick={handleClick}
       >
         <Spiral audioRef={audioRef} radius={100} maxRadius={100} minRadius={70} R={0.7} fov={65} />
+      </div>
+
+      <div style={{ position: "absolute", bottom: "0", right: "0", color: "white", padding: "20px" }}>
+        <button onClick={handleClick} id="PLAY_BTN"> {renderedPlayBtn} </button>
       </div>
     </div>
   )
