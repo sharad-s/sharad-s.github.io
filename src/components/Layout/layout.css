@@ -87,9 +87,9 @@ sup {
 img {
   border-style: none;
 }
-svg:not(:root) {
+/* svg:not(:root) {
   overflow: hidden;
-}
+} */
 code,
 kbd,
 pre,

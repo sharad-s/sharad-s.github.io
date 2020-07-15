@@ -113,7 +113,7 @@ div.content {
   place-content: center space-between;
 
   /* colors  */
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px #252A2B;
   /* background: lime; */
 
   /* Size */
@@ -151,6 +151,10 @@ div.content {
 
 .control-button:hover {
   cursor: pointer;
+}
+
+.control-button:hover path {
+  fill: #DA4567;
 }
 
 #seekbar {
@@ -354,4 +358,25 @@ h5,
 p,
 a {
   color: #FEFEFE;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #fff;
+  stroke-width: 1;
 }
