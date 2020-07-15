@@ -97,21 +97,64 @@ div.content {
   background: black;
   padding-top: 10%;
   padding-right: 50px;
+  cursor: url("https://user-images.githubusercontent.com/8727763/87582247-c1b22a00-c69f-11ea-934c-21a80dad1ff1.png"), auto;
+
 }
 
 #VISUAL:hover {
+  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
   cursor: pointer;
 }
 
-#PLAY_BTN {
+.audio-player {
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  place-content: center space-between;
+
+  /* colors  */
+  border-bottom: solid 1px grey;
+  /* background: lime; */
+
+  /* Size */
+  min-width: 300px;
+  min-height: 60px;
+}
+
+.audio-player:hover {
+  /* cursor: pointer; */
+}
+
+.audio-player .song-details {
+  display: flex;
+  flex-direction: column;
+  place-content: start center;
+  /* background: red; */
+}
+
+.audio-player .controls {
+  display: flex;
+  flex-direction: row;
+  place-content: center center;
+}
+
+.controls .control-button {
   border: none;
   background:none;
   color: white;
   font-size: 20px;
+  margin: 5px;
+  z-index: 10;
+  /* background: pink; */
+  padding: 0px 0px;
 }
 
-#PLAY_BTN:hover {
+.control-button:hover {
   cursor: pointer;
+}
+
+#seekbar {
+  color: white;
 }
 
 #work {

@@ -11,9 +11,7 @@ const About = () => {
   const audioRef = React.useRef(null)
   const [isPlaying, setIsPlaying] = React.useState(false)
 
-  const renderedPlayBtn = isPlaying ? "⏸" : "▶️"
-
-  const handleClick = () =>  {
+  const handleClick = () => {
     if (!audioRef.current.paused) {
       audioRef.current.pause()
       setIsPlaying(false)
@@ -72,8 +70,11 @@ const About = () => {
         Email
       </a>
       {/* <img id="GIF" src="https://media0.giphy.com/media/Ckq1NXDHFlvfq/giphy.gif " /> */}
-      <div id="AUDIO">
-        <AudioPlayer ref={audioRef} />
+
+      <div style={{ position: "absolute", bottom: "0", right: "0", color: "white", padding: "20px" }}>
+        <div id="AUDIO">
+          <AudioPlayer ref={audioRef} handleClick={handleClick} isPlaying={isPlaying} />
+        </div>
       </div>
       <div
         id="VISUAL"
@@ -82,9 +83,7 @@ const About = () => {
         <Spiral audioRef={audioRef} radius={100} maxRadius={100} minRadius={70} R={0.7} fov={65} />
       </div>
 
-      <div style={{ position: "absolute", bottom: "0", right: "0", color: "white", padding: "20px" }}>
-        <button onClick={handleClick} id="PLAY_BTN"> {renderedPlayBtn} </button>
-      </div>
+
     </div>
   )
 }
