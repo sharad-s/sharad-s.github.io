@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{lJtj:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Wbzz"),r=a("Zttt"),o=a("EYWl");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement("div",{className:"section"},l.a.createElement(o.a,{title:"Work Experience"}),l.a.createElement("h1",null,"Olypsis"),l.a.createElement("p",null," Come back later!"),l.a.createElement(c.Link,{to:"/#work"},"Go back")))}}}]);
+//# sourceMappingURL=component---src-pages-work-olypsis-jsx-00cf424024121774f02c.js.map
