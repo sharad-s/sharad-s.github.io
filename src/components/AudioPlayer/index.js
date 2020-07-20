@@ -31,24 +31,6 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
     audio.play()
   }
 
-  const handleSeek = () => {
-    const audio = ref.current
-
-    const secondsPassed = audio.currentTime
-    const duration = audio.duration
-
-    // const elem = document.querySelector('.information-overlay .fill');
-
-    let numnum = ((secondsPassed % duration) / duration - 1) * 100;
-    if (secondsPassed > duration) {
-      numnum = -100;
-    }
-
-    // elem.style.transform = `translate3d(${numnum}%, 0, 0)`;
-  }
-
-  const { handleClick, isPlaying } = props;
-
   const muteSVG = (
     <svg class="svg-icon" viewBox="0 0 20 20">
       <path d="M18.084,11.639c0.168,0.169,0.168,0.442,0,0.611c-0.084,0.084-0.195,0.127-0.306,0.127c-0.111,0-0.221-0.043-0.306-0.127l-1.639-1.639l-1.639,1.639c-0.084,0.084-0.195,0.127-0.306,0.127c-0.111,0-0.222-0.043-0.307-0.127c-0.168-0.169-0.168-0.442,0-0.611L15.223,10l-1.64-1.639c-0.168-0.168-0.168-0.442,0-0.61c0.17-0.169,0.442-0.169,0.612,0l1.639,1.639l1.639-1.639c0.169-0.169,0.442-0.169,0.611,0c0.168,0.168,0.168,0.442,0,0.61L16.445,10L18.084,11.639z M12.161,2.654v14.691c0,0.175-0.105,0.333-0.267,0.4c-0.054,0.021-0.109,0.032-0.166,0.032c-0.111,0-0.223-0.043-0.305-0.127l-3.979-3.979H2.222c-0.237,0-0.432-0.194-0.432-0.432V6.759c0-0.237,0.195-0.432,0.432-0.432h5.222l3.979-3.978c0.123-0.125,0.309-0.163,0.471-0.095C12.056,2.322,12.161,2.479,12.161,2.654 M7.192,7.192H2.654v5.617h4.538V7.192z M11.296,3.698l-3.24,3.241v6.123l3.24,3.24V3.698z"></path>
@@ -66,6 +48,8 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
       <path fill="none" d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
     </svg>
   )
+  
+  const { handleClick, isPlaying } = props;
 
   const renderedPlayBtn = isPlaying ? soundSVG : muteSVG
 

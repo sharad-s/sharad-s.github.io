@@ -9,6 +9,7 @@ const SecondPage = () => (
     <div className="section">
       <SEO title="Work Experience" />
       <h1>Plug.af</h1>
+      <p> Come back later!</p>
       <Link to="/#work">Go back</Link>
     </div>
   </Layout>

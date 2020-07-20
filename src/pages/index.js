@@ -56,6 +56,7 @@ const IndexPage = () => {
 
       <div id="projects" className="section">
         <h1>Projects</h1>
+        <p> Come back later!</p>
         <Link
           to="/#top"
           onClick={e => handleLinkClick(e, "#top")}
@@ -68,6 +69,7 @@ const IndexPage = () => {
 
       <div id="media" className="section">
         <h1> Media Library</h1>
+        <p> Come back later!</p>
         <Link
           to="/#top"
           onClick={e => handleLinkClick(e, "#top")}
