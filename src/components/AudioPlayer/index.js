@@ -57,7 +57,7 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
   // https://m.dotdev.co/how-to-build-an-audio-player-with-html5-and-the-progress-element-487cbbbaebfc
   return (
     <div>
-      <div className='audio-player' >
+      <div className='audio-player hidden' >
         <div className="song-details">
           <span>{src.artist}</span>
           <span>{src.name}</span>
