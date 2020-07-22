@@ -7,7 +7,7 @@ const Media = () => {
     return (
         <div id="media" className="section">
             <h1> Media Library</h1>
-            <p> Come back later!</p>
+            <p> Coming soon!</p>
             <Link
                 to="/#top"
                 onClick={e => handleLinkClick(e, "#top")}

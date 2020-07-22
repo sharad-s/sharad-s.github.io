@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 // Components
 import Layout from "../components/Layout"
@@ -12,10 +12,9 @@ import Projects from "../components/sections/Projects"
 import Media from "../components/sections/Media"
 
 
-import { handleLinkClick } from "../utils/helpers"
+// import { handleLinkClick } from "../utils/helpers"
 
 const IndexPage = () => {
-  const audioRef = React.useRef(null)
   return (
     <Layout>
       <SEO title="Home" />

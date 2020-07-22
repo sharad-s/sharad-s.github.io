@@ -132,6 +132,15 @@ div.content {
   /* background: red; */
 }
 
+.song-details:hover {
+  color: #DA4567;
+  cursor: pointer;
+}
+
+.song-details:hover path {
+  fill: #DA4567;
+}
+
 .audio-player .controls {
   display: flex;
   flex-direction: row;

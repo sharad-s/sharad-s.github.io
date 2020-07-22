@@ -1,13 +1,24 @@
 import React, { useState } from "react"
 import { audioURLs } from './constants'
 
+// import soundSVG from '../../../assets/sound.svg'
+// import muteSVG from '../../../assets/mute.svg'
 
 const randNum = n => Math.floor(Math.random() * (n + 1))
 
 export const AudioPlayer = React.forwardRef((props, ref) => {
 
-  const [index, setIndex] = useState(randNum(audioURLs.length - 1))
+  const [playing, setPlaying] = useState(false)
+  const [index, setIndex] = useState(0)
   const [src, setSrc] = useState(audioURLs[index])
+
+  const { handleClick, isPlaying } = props;
+
+  React.useEffect(() => {
+    setPlaying(isPlaying);
+  }, [isPlaying])
+
+
 
   const handleNext = () => {
     const audio = ref.current
@@ -29,6 +40,7 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
     audio.src = source.url
     audio.load()
     audio.play()
+    setPlaying(true)
   }
 
   const muteSVG = (
@@ -48,19 +60,20 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
       <path fill="none" d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
     </svg>
   )
-  
-  const { handleClick, isPlaying } = props;
 
-  const renderedPlayBtn = isPlaying ? soundSVG : muteSVG
+  const renderedArtist = playing ? src.artist : "Click to play "
+  const renderedTrackname = playing ? src.name : ""
 
 
-  // https://m.dotdev.co/how-to-build-an-audio-player-with-html5-and-the-progress-element-487cbbbaebfc
+  const renderedPlayBtn = playing ? soundSVG : muteSVG
+
+  // https://m.dotdev.co/how-to-build-an-audio-player-with-html5-and-the-progress-element-487cbbbaeb  fc
   return (
     <div>
       <div className='audio-player hidden' >
-        <div className="song-details">
-          <span>{src.artist}</span>
-          <span>{src.name}</span>
+        <div className="song-details" onClick={handleClick}>
+          <span> {renderedArtist}</span>
+          <span>{renderedTrackname}</span>
         </div>
         <div className="controls">
           <button onClick={handleClick} className="control-button" style={{ 'font-size': '20px' }}>
