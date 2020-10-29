@@ -28,9 +28,9 @@ const About = () => {
         <br />
         <span style={{ color: "#FFDAE7" }}>creative tech enthusiast</span>
       </h1>
-      <p>AI, ML, JavaScript, Python, Golang, 3D, XR, CSS, Design, Art, Music</p>
+      <p>ML, JavaScript, Python, Golang, 3D, XR, CSS, Design, Art, Music</p>
       <br />
-      <h3 style={{ color: "#FFF2F7" }}> Find me here: </h3>{" "}
+      <h3 style={{ color: "#FFF2F7" }}> Find me here: </h3>
       <a
         href="https://drive.google.com/open?id=1VF2xl-mBi8d1MHQN0ySn8WELDYOK4sM-"
         target="_blank"

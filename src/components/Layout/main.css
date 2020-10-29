@@ -63,7 +63,7 @@ div.content {
 
 #about {
   padding-top: 30vh;
-  background-color: transparent;
+  background-color: green;
   position: relative;
   z-index: 0;
 }
@@ -97,13 +97,27 @@ div.content {
   background: black;
   padding-top: 10%;
   padding-right: 50px;
-  cursor: url("https://user-images.githubusercontent.com/8727763/87582247-c1b22a00-c69f-11ea-934c-21a80dad1ff1.png"), auto;
+  /* cursor: url("../../../assets/cursor.png"), pointer; */
+  /* cursor: url("https://user-imag es.githubusercontent.com/8727763/87582247-c1b22a00-c69f-11ea-934c-21a80dad1ff1.png"), auto; */
 
 }
 
 #VISUAL:hover {
   /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url("/cursor.png"), pointer;
+  /* cursor: help; */
+  /* background-color: white; */
+
+}
+
+#work:hover {
+  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
+  /* cursor: pointer; */
+  cursor: url("/cursor.png"), pointer;
+  /* cursor: help; */
+  /* background-color: white; */
+
 }
 
 .audio-player {
@@ -208,6 +222,7 @@ div.content {
   display: flex;
   flex-direction: column;
   z-index: 10;
+  margin-top: 20px;
   /* justify-content: space-between; */
   /* box-shadow: 3px 3px 5px grey;; */
 }
@@ -224,7 +239,7 @@ div.content {
 #ME {
   width: 100px !important;
   border-radius: 5px;
-  margin: 20px 20px;
+  /* margin: 20px 20px; */
 }
 
 #ME_HEADER {
@@ -295,7 +310,7 @@ a:hover:not(.active) {
     position: absolute;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0px 10%;
     /* background-color: white; */
   }
 
@@ -320,8 +335,7 @@ a:hover:not(.active) {
   .sidebar nav {
     width: 100%;
     height: 100%;
-    padding-right: 10%;
-    padding-top: 15px;
+    /* margin-top: 20px; */
     /* background-color:lime; */
   }
   

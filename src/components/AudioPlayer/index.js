@@ -1,9 +1,6 @@
 import React, { useState } from "react"
 import { audioURLs } from './constants'
 
-// import soundSVG from '../../../assets/sound.svg'
-// import muteSVG from '../../../assets/mute.svg'
-
 const randNum = n => Math.floor(Math.random() * (n + 1))
 
 export const AudioPlayer = React.forwardRef((props, ref) => {
@@ -17,7 +14,6 @@ export const AudioPlayer = React.forwardRef((props, ref) => {
   React.useEffect(() => {
     setPlaying(isPlaying);
   }, [isPlaying])
-
 
 
   const handleNext = () => {

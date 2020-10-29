@@ -18,6 +18,11 @@ export const audioURLs = [
     //     url: "https://a.tumblr.com/tumblr_qduv8vQvg01r4pgk7o1.mp3",
     // },
     {
+        name: 'DUBPLATE 2',
+        artist: "PLATA",
+        url: "https://a.tumblr.com/tumblr_qizbxjeYvU1r4pgk7o1.mp3"
+    },
+    {
         name: 'problems',
         artist: "NK",
         url: "https://a.tumblr.com/tumblr_qac3h4ePQn1r4pgk7o1.mp3"
@@ -33,11 +38,11 @@ export const audioURLs = [
     //     artist: "PLATA",
     //     url: "https://a.tumblr.com/tumblr_qdulnsF0Iu1r4pgk7o1.mp3",
     // },
-    {
-        name: "drift",
-        artist: "sharad s.",
-        url: "https://a.tumblr.com/tumblr_qa7jfcv7741r4pgk7o1.mp3",
-    },
+    // {
+    //     name: "drift",
+    //     artist: "sharad s.",
+    //     url: "https://a.tumblr.com/tumblr_qa7jfcv7741r4pgk7o1.mp3",
+    // },
     // {
     //     name: "GOMILA",
     //     artist: "PLATA",
