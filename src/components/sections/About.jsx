@@ -78,6 +78,7 @@ const About = () => {
       </div>
       <div
         id="VISUAL"
+        className={`${isPlaying && 'playing'}`}
         onClick={handleClick}
       >
         <Spiral audioRef={audioRef} radius={100} maxRadius={100} minRadius={70} R={0.7} fov={65} />

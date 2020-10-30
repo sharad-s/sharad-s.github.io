@@ -1,3 +1,4 @@
+
 const initSrc =
     "https://raw.githubusercontent.com/anars/blank-audio/master/250-milliseconds-of-silence.mp3"
 
@@ -17,11 +18,16 @@ export const audioURLs = [
     //     artist: "sharad s.",
     //     url: "https://a.tumblr.com/tumblr_qduv8vQvg01r4pgk7o1.mp3",
     // },
-    {
-        name: 'DUBPLATE 2',
-        artist: "PLATA",
-        url: "https://a.tumblr.com/tumblr_qizbxjeYvU1r4pgk7o1.mp3"
-    },
+    // {
+    //     name: "6.8.15 (was shit)",
+    //     artist: "sharad s.",
+    //     url: "https://a.tumblr.com/tumblr_qizz2nN45D1r4pgk7o1.mp3",
+    // },
+    // {
+    //     name: 'DUBPLATE 2',
+    //     artist: "PLATA",
+    //     url: "https://a.tumblr.com/tumblr_qizbxjeYvU1r4pgk7o1.mp3"
+    // },
     {
         name: 'problems',
         artist: "NK",
@@ -70,3 +76,4 @@ export const audioURLs = [
 ]
 
 const cors = "https://cors-anywhere.herokuapp.com/"
+
