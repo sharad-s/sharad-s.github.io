@@ -22,9 +22,9 @@ const IndexPage = () => {
         <span>🚧 Under Construction  🚧</span>
       </div> */}
       <About />
-      <Work />
+      {/* <Work />
       <Projects />
-      <Media />
+      <Media /> */}
       {/* <footer className="footer">
       © {new Date().getFullYear()}, Built with
       {` `}

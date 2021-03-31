@@ -142,7 +142,9 @@ div.content {
   z-index: 5000;
   height: 1px;
   width: 100%;
-  background-color:  #15E5EE;
+  /* background:  #15E5EE; */
+  background: linear-gradient(90deg, rgba(171,0,162,1) 0%, rgba(122,3,116,1) 26%, rgba(0,233,241,1) 100%);
+  /* background: linear-gradient(20deg, rgba(171,0,162,1) 0%, rgba(131,5,125,1) 16%, rgba(21,150,177,1) 76%, rgba(0,233,241,1) 100%); */
   transform: translate3d(0%, 0, 0);
   overflow: hidden;
 }

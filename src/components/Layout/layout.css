@@ -27,6 +27,7 @@ canvas,
 progress,
 video {
   display: inline-block;
+  background: black;
 }
 audio:not([controls]) {
   display: none;
